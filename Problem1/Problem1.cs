@@ -40,8 +40,6 @@
                 for (short j = 0; j < arr.GetLength(1); j++)
                 {
 
-                    //Console.Write(matrix[i, j].ToString().PadLeft(3) + "   ");
-
                     Console.Write($"{arr[i,j],3}  "); // Format numbers to width 3
 
                 }
