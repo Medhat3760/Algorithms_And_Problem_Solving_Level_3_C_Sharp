@@ -1,6 +1,6 @@
 # 3x3 Random Matrix Generator
 
-This C# program generates a 3x3 matrix filled with random integers between 1 and 99 and displays it in a formatted grid layout. It demonstrates basic matrix manipulation and random number generation in C#.
+This C# program generates a 3x3 matrix filled with random integers between 1 and 100 and displays it in a formatted grid layout. It demonstrates basic matrix manipulation and random number generation in C#.
 
 ---
 
