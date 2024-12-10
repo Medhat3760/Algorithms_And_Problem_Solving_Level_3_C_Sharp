@@ -55,4 +55,3 @@ The following is a 3x3 random matrix:
  35   88   22  
  47   12   99  
  73   45   61
-
