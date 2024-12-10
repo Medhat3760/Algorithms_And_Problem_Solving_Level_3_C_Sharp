@@ -90,43 +90,6 @@
 
         }
 
-        /* List
-        static void SumEachRowInMatrixInList(int[,] matrix, List<int> lSumMatrixRows)
-        {
-
-            for (short i = 0; i < matrix.GetLength(0); i++)
-            {
-
-                int sum = 0;
-
-                for (short j = 0; j < matrix.GetLength(1); j++)
-                {
-
-                    sum += matrix[i, j];
-
-                }
-
-                lSumMatrixRows.Add(sum);
-
-            }
-
-        }
-
-        static void PrintList(List<int> list)
-        {
-
-            short count = 1;
-
-            foreach (int item in list)
-            {
-
-                Console.WriteLine($"Row {count} Sum = " + item);
-                count++;
-            }
-
-        }
-        */
-
         static void Main(string[] args)
         {
 
@@ -142,15 +105,7 @@
             SumEachRowInMatrixInArray(matrix, arrSum);
 
             PrintRowsSumArray(arrSum);
-
-
-            //List<int> lSumMatrixRows = new List<int>();
-
-            //SumEachRowInMatrixInList(matrix, lSumMatrixRows);
-
-            //Console.WriteLine("\nThe following is a Sum Each Row In Matrix:");
-            //PrintList(lSumMatrixRows);
-
+            
         }
     }
 }
