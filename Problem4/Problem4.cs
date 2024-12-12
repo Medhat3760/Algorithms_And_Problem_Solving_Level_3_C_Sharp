@@ -5,6 +5,8 @@ namespace Problem4
     internal class Problem4
     {
 
+        // Sum Each Col In Matrix
+
         static Random random = new Random();
 
         static int RandomNumber(int from, int to)
