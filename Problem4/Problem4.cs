@@ -3,7 +3,7 @@ namespace Problem4
     internal class Problem4
     {
 
-        // Each Col Sum In Matrix
+        // Sum Each Col In Matrix
 
         static Random random = new Random();
 
