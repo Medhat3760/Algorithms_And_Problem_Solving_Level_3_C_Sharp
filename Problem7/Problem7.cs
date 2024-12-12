@@ -42,7 +42,6 @@
 
             }
 
-
         }
 
         static void TransposeMatrix(int[,] matrix, int[,] matrixTransposed)
@@ -59,7 +58,6 @@
                 }
 
             }
-
 
         }
 
