@@ -17,7 +17,7 @@ This C# program calculates the sum of each column in a 3x3 matrix filled with ra
    - Generates a random number within a specified range.
 
 2. **`FillMatrixWithRandomNumbers` Method**:
-   - Populates a 3x3 matrix with random integers between 1 and 100.
+   - Populates a 3x3 matrix with random integers between 1 and 99.
 
 3. **`PrintMatrix` Method**:
    - Prints the matrix in a structured grid format.
@@ -40,7 +40,7 @@ This C# program calculates the sum of each column in a 3x3 matrix filled with ra
 ## How It Works
 
 1. **Matrix Generation**:
-   - A 3x3 matrix is initialized and filled with random integers between 1 and 100.
+   - A 3x3 matrix is initialized and filled with random integers between 1 and 99.
 
 2. **Column Sum Calculation**:
    - For each column, the program calculates the sum of its elements and stores the result in an array.
