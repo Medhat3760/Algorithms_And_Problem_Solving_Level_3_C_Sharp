@@ -83,7 +83,7 @@
         static void PrintColsSumArray(int[] arrSum)
         {
 
-            Console.WriteLine("\nThe following is a Sum Each Row In Matrix:");
+            Console.WriteLine("\nThe following is a Sum Each Col In Matrix:");
 
             for(short i=0; i < arrSum.Length; i++)
             {
