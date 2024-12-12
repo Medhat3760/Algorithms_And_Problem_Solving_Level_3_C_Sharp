@@ -67,7 +67,6 @@
             int[,] matrix = new int[3, 3];
             int[,] matrixTransposed = new int[3, 3];
 
-
             FillMatrixWithRandomNumbers(matrix);
 
             Console.WriteLine("\nThe following is a 3x3 matrix:");
