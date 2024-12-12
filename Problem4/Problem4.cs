@@ -1,11 +1,9 @@
-using System.Globalization;
-
 namespace Problem4
 {
     internal class Problem4
     {
 
-        // Sum Each Col In Matrix
+        // Each Col Sum In Matrix
 
         static Random random = new Random();
 
@@ -36,7 +34,7 @@ namespace Problem4
         static void PrintMatrix(int[,] matrix)
         {
 
-            Console.WriteLine("\nThe following is a 3x3 Random matrix:");
+            Console.WriteLine("\nThe following is a 3x3 random matrix:");
 
             for (short i = 0; i < matrix.GetLength(0); i++)
             {
@@ -73,12 +71,12 @@ namespace Problem4
         static void PrintEachColSum(int[,] matrix)
         {
 
-            Console.WriteLine("\nThe folloing are the sum of each col in the matrix:");
+            Console.WriteLine("\nThe following are the sum of each col in the matrix:");
 
             for (short j = 0; j < matrix.GetLength(1); j++)
             {
 
-                Console.WriteLine($" Col {j+1} Sum = " + ColSum(matrix, j));
+                Console.WriteLine($" Col {j + 1} Sum = " + ColSum(matrix, j));
 
             }
 
