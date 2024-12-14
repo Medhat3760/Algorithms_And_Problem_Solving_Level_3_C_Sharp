@@ -9,7 +9,7 @@
 
         static int RandomNumber(int from, int to)
         {
-            return random.Next(from, to);
+            return random.Next(from, to + 1);
         }
 
         static void FillMatrixWithRandomNumbers(int[,] matrix)
