@@ -5,7 +5,7 @@
 
         // Transpose Matrix
 
-        static void FillMatrixWithRandomNumbers(int[,] matrix)
+        static void FillMatrixWithOrderedNumbers(int[,] matrix)
         {
 
             short counter = 0;
@@ -67,7 +67,7 @@
             int[,] matrix = new int[3, 3];
             int[,] matrixTransposed = new int[3, 3];
 
-            FillMatrixWithRandomNumbers(matrix);
+            FillMatrixWithOrderedNumbers(matrix);
 
             Console.WriteLine("\nThe following is a 3x3 matrix:");
             PrintMatrix(matrix);
