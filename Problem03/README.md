@@ -1,6 +1,6 @@
 # Sum Each Row of a Matrix and Store in an Array
 
-This C# program generates a 3x3 matrix with random integers between 1 and 99, calculates the sum of each row, and stores the sums in a one-dimensional array. It demonstrates matrix operations, random number generation, and array manipulation.
+This C# program generates a 3x3 matrix with random integers between 1 and 100, calculates the sum of each row, and stores the sums in a one-dimensional array. It demonstrates matrix operations, random number generation, and array manipulation.
 
 ---
 
@@ -51,7 +51,7 @@ This C# program generates a 3x3 matrix with random integers between 1 and 99, ca
    - A one-dimensional array (`arrSum`) is initialized to store the row sums.
 
 2. **Matrix Population**:
-   - The matrix is filled with random integers between 1 and 99 using `RandomNumber`.
+   - The matrix is filled with random integers between 1 and 100 using `RandomNumber`.
 
 3. **Row Sum Calculation**:
    - The sum of each row is calculated using `RowSum` and stored in the `arrSum` array.
