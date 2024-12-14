@@ -1,5 +1,3 @@
-﻿using System.Globalization;
-
 namespace Problem2
 {
     internal class Problem2
