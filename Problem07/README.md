@@ -10,7 +10,7 @@ The program resides in the `Problem7` namespace and is implemented in a single c
 ### Methods
 The program includes the following methods:
 
-#### 1. `FillMatrixWithRandomNumbers`
+#### 1. `FillMatrixWithOrderedNumbers`
 This method populates a 3x3 integer matrix with ordered numbers starting from 1.
 
 - **Parameters:**
@@ -21,7 +21,7 @@ This method populates a 3x3 integer matrix with ordered numbers starting from 1.
   - A counter variable is incremented and assigned to each cell.
 
 ```csharp
-static void FillMatrixWithRandomNumbers(int[,] matrix)
+static void FillMatrixWithOrderedNumbers(int[,] matrix)
 {
     short counter = 0;
     for (short i = 0; i < matrix.GetLength(0); i++)
@@ -83,7 +83,7 @@ static void TransposeMatrix(int[,] matrix, int[,] matrixTransposed)
 ```
 
 ### `Main` Method
-The entry point of the program initializes a 3x3 matrix, fills it with ordered numbers using `FillMatrixWithRandomNumbers`, prints it, computes its transpose, and prints the transposed matrix.
+The entry point of the program initializes a 3x3 matrix, fills it with ordered numbers using `FillMatrixWithOrderedNumbers`, prints it, computes its transpose, and prints the transposed matrix.
 
 ```csharp
 static void Main(string[] args)
@@ -91,7 +91,7 @@ static void Main(string[] args)
     int[,] matrix = new int[3, 3];
     int[,] matrixTransposed = new int[3, 3];
 
-    FillMatrixWithRandomNumbers(matrix);
+    FillMatrixWithOrderedNumbers(matrix);
 
     Console.WriteLine("\nThe following is a 3x3 matrix:");
     PrintMatrix(matrix);
@@ -125,7 +125,7 @@ The following is the transposed matrix:
 ```
 
 ## Explanation
-- The `FillMatrixWithRandomNumbers` method ensures the matrix is filled with ordered numbers for simplicity.
+- The `FillMatrixWithOrderedNumbers` method ensures the matrix is filled with ordered numbers for simplicity.
 - The `PrintMatrix` method formats the output to display the matrix in a grid-like structure.
 - The `TransposeMatrix` method swaps rows and columns to create the transposed matrix.
 
