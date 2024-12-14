@@ -11,11 +11,11 @@ The program resides in the `Problem8` namespace and is implemented in a single c
 The program includes the following methods:
 
 #### 1. `RandomNumber`
-This method generates a random integer within a specified range.
+This method generates a random integer within a specified range (inclusive).
 
 - **Parameters:**
   - `int from`: The lower bound (inclusive) for the random number.
-  - `int to`: The upper bound (exclusive) for the random number.
+  - `int to`: The upper bound (inclusive) for the random number.
 
 - **Implementation:**
   - Uses the `Random` class to generate the random number.
@@ -23,12 +23,12 @@ This method generates a random integer within a specified range.
 ```csharp
 static int RandomNumber(int from, int to)
 {
-    return random.Next(from, to);
+    return random.Next(from, to + 1);
 }
 ```
 
 #### 2. `FillMatrixWithRandomNumbers`
-This method populates a matrix with random numbers between 1 and 10.
+This method populates a matrix with random numbers between 1 and 10 (inclusive).
 
 - **Parameters:**
   - `int[,] matrix`: The matrix to be filled.
@@ -44,7 +44,7 @@ static void FillMatrixWithRandomNumbers(int[,] matrix)
     {
         for (short j = 0; j < matrix.GetLength(1); j++)
         {
-            matrix[i, j] = RandomNumber(1, 11);
+            matrix[i, j] = RandomNumber(1, 10);
         }
     }
 }
@@ -159,4 +159,3 @@ This program demonstrates:
 - Generating random numbers within a specified range.
 - Performing element-wise operations on matrices.
 - Formatting console output for readability.
-
