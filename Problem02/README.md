@@ -1,6 +1,6 @@
 # Sum of Each Row in a Matrix
 
-This C# program generates a 3x3 matrix with random integers between 1 and 99, displays the matrix, and calculates the sum of each row. It demonstrates the use of matrix operations and simple arithmetic in C#.
+This C# program generates a 3x3 matrix with random integers between 1 and 100, displays the matrix, and calculates the sum of each row. It demonstrates the use of matrix operations and simple arithmetic in C#.
 
 ---
 
@@ -46,7 +46,7 @@ This C# program generates a 3x3 matrix with random integers between 1 and 99, di
    - A 3x3 integer matrix is created as a 2D array.
 
 2. **Matrix Population**:
-   - The matrix is filled with random values between 1 and 99 using `RandomNumber`.
+   - The matrix is filled with random values between 1 and 100 using `RandomNumber`.
 
 3. **Row Sum Calculation**:
    - The sum of each row is calculated using `RowSum`.
