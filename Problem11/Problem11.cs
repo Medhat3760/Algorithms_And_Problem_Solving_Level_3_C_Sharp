@@ -49,7 +49,7 @@ namespace Problem11
 
         }
 
-        static int SumOfMatrixNumbers(int[,] matrix)
+        static int SumOfMatrix(int[,] matrix)
         {
 
             int sum = 0;
@@ -73,7 +73,7 @@ namespace Problem11
         static bool AreEqualMatrices(int[,] matrix1, int[,] matrix2)
         {
 
-            return SumOfMatrixNumbers(matrix1) == SumOfMatrixNumbers(matrix2);
+            return SumOfMatrix(matrix1) == SumOfMatrix(matrix2);
 
         }
 
