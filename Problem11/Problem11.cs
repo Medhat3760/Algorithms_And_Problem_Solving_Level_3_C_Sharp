@@ -1,5 +1,6 @@
-﻿namespace Problem11
+namespace Problem11
 {
+    // Check Matrices Equality
     internal class Problem11
     {
 
