@@ -1,5 +1,6 @@
 # Problem 13: Check Identity Matrix
 
+## Overview
 This program checks whether a given matrix is an identity matrix or not. An identity matrix is a square matrix in which all the diagonal elements are 1 and all other elements are 0.
 
 ### Features
