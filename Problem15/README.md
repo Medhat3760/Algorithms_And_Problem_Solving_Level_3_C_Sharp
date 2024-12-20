@@ -108,5 +108,3 @@ number 9 count in matrix is 4
 1. Allow dynamic matrix input from the user.
 2. Extend functionality to handle larger or non-square matrices.
 3. Add error handling for invalid inputs.
-
----
