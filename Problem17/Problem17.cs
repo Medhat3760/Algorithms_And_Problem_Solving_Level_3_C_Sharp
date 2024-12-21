@@ -1,4 +1,3 @@
-﻿using MyLib;
 namespace Problem17
 {
     // Number Exists In Matrix
@@ -17,10 +16,8 @@ namespace Problem17
             }
         }
 
-        static short CountNumberInMatrix(int[,] matrix, int number)
+        static bool IsNumberExistsInMatrix(int[,] matrix, int number)
         {
-
-            short numberCount = 0;
 
             for (short i = 0; i < matrix.GetLength(0); i++)
             {
@@ -28,20 +25,12 @@ namespace Problem17
                 for (short j = 0; j < matrix.GetLength(1); j++)
                 {
 
-                    if (matrix[i, j] == number) { numberCount++; }
+                    if (matrix[i, j] == number) return true;
 
                 }
-
             }
 
-            return numberCount;
-
-        }
-
-        static bool IsNumberExistsInMatrix(int[,] matrix, int number)
-        {
-
-            return CountNumberInMatrix(matrix, number) > 0;
+            return false;
 
         }
 
@@ -58,7 +47,8 @@ namespace Problem17
             Console.WriteLine("\nMatrix:");
             PrintMatrix(matrix);
 
-            int number = MyInputLib.ReadIntNumber("\nPlease enter a number to look for in matrix? ");
+            Console.WriteLine("\nPlease enter a number to look for in matrix? ");
+            int number = int.Parse(Console.ReadLine());
 
             if (IsNumberExistsInMatrix(matrix, number))
             {
