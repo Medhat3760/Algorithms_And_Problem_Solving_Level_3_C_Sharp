@@ -1,137 +1,120 @@
-# Problem 17: Check if a Number Exists in a Matrix
+# Problem17: Number Exists In Matrix
 
-This C# program demonstrates how to check if a specific number exists in a matrix. It uses helper functions for matrix operations, including counting occurrences of a number and determining its presence in the matrix. The program also utilizes a custom library (`MyLib`) for reading user input.
+This C# program checks if a given number exists in a matrix. The matrix is predefined in the code, and the user is prompted to enter a number to search for. The program then determines if the number is present in the matrix and displays the result.
 
-## Code Overview
+## Code Explanation
 
-### Namespace and Libraries
-
-```csharp
-using MyLib;
-namespace Problem17
-```
-- `MyLib`: A custom library for handling input (e.g., reading integers).
-- `Problem17`: The main namespace for this program.
-
-### Core Functions
-
-#### `PrintMatrix`
-
+### 1. **PrintMatrix Method**
 ```csharp
 static void PrintMatrix(int[,] matrix)
+{
+    for (short i = 0; i < matrix.GetLength(0); i++)
+    {
+        for (short j = 0; j < matrix.GetLength(1); j++)
+        {
+            Console.Write($" {matrix[i, j],2}   ");
+        }
+        Console.WriteLine();
+    }
+}
 ```
-Prints the matrix in a formatted manner.
-- Iterates through the matrix rows and columns.
-- Displays each element with proper spacing.
+- This method prints the 2D matrix in a readable format.
+- The matrix is traversed row by row, and each element is printed with proper spacing.
 
-#### `CountNumberInMatrix`
-
-```csharp
-static short CountNumberInMatrix(int[,] matrix, int number)
-```
-Counts the occurrences of a specific number in the matrix.
-- Loops through each element in the matrix.
-- Increments a counter if the number matches the given value.
-
-#### `IsNumberExistsInMatrix`
-
+### 2. **IsNumberExistsInMatrix Method**
 ```csharp
 static bool IsNumberExistsInMatrix(int[,] matrix, int number)
+{
+    for (short i = 0; i < matrix.GetLength(0); i++)
+    {
+        for (short j = 0; j < matrix.GetLength(1); j++)
+        {
+            if (matrix[i, j] == number) return true;
+        }
+    }
+    return false;
+}
 ```
-Checks if a number exists in the matrix by leveraging `CountNumberInMatrix`.
-- Returns `true` if the count is greater than zero.
-- Returns `false` otherwise.
+- This method checks if a given number exists in the matrix.
+- It iterates through every element of the matrix.
+- If the number is found, it immediately returns `true`.
+- If the loop completes without finding the number, it returns `false`.
 
-### Main Method
-
+### 3. **Main Method**
 ```csharp
 static void Main(string[] args)
+{
+    int[,] matrix =
+    {
+        {22, 90, 11 },
+        {77, 30, 99 },
+        {55, 33, 44 }
+    };
+
+    Console.WriteLine("\nMatrix:");
+    PrintMatrix(matrix);
+
+    Console.WriteLine("\nPlease enter a number to look for in matrix? ");
+    int number = int.Parse(Console.ReadLine());
+
+    if (IsNumberExistsInMatrix(matrix, number))
+    {
+        Console.WriteLine("Yes it is there.");
+    }
+    else
+    {
+        Console.WriteLine("No it is NOT there.");
+    }
+}
 ```
-1. **Matrix Initialization:**
-   ```csharp
-   int[,] matrix =
-   {
-       {22, 90, 11 },
-       {77, 30, 99 },
-       {55, 33, 44 }
-   };
-   ```
-   - A 3x3 matrix is hardcoded with integer values.
+- **Matrix Definition**:
+  - A 3x3 matrix is predefined with integer values.
+- **User Input**:
+  - The user is prompted to enter a number to search for in the matrix.
+- **Logic Execution**:
+  - The `IsNumberExistsInMatrix` method is called with the matrix and the user's input.
+  - Depending on the return value (`true` or `false`), the program prints whether the number exists in the matrix.
 
-2. **Matrix Display:**
-   ```csharp
-   Console.WriteLine("\nMatrix:");
-   PrintMatrix(matrix);
-   ```
-   - The matrix is displayed using the `PrintMatrix` function.
-
-3. **User Input:**
-   ```csharp
-   int number = MyInputLib.ReadIntNumber("\nPlease enter a number to look for in matrix? ");
-   ```
-   - Prompts the user to enter a number using the custom `MyInputLib` library.
-
-4. **Number Existence Check:**
-   ```csharp
-   if (IsNumberExistsInMatrix(matrix, number))
-   {
-       Console.WriteLine("Yes it is there.");
-   }
-   else
-   {
-       Console.WriteLine("No it is NOT there.");
-   }
-   ```
-   - Checks if the number exists using `IsNumberExistsInMatrix`.
-   - Prints an appropriate message based on the result.
-
-## Example Output
-
-### Input
+## Sample Output
+### Example 1
+**Input**:
+```
+Please enter a number to look for in matrix?
+30
+```
+**Output**:
+```
 Matrix:
-```
  22   90   11
  77   30   99
  55   33   44
-```
-User Input: `90`
 
-### Output
-```
 Yes it is there.
 ```
 
-### Input
-Matrix:
+### Example 2
+**Input**:
 ```
+Please enter a number to look for in matrix?
+100
+```
+**Output**:
+```
+Matrix:
  22   90   11
  77   30   99
  55   33   44
-```
-User Input: `100`
 
-### Output
-```
 No it is NOT there.
 ```
 
 ## Key Features
-- Demonstrates matrix traversal and number comparison.
-- Uses modular functions for better code reuse and clarity.
-- Incorporates custom input handling via `MyLib`.
+- **Matrix Traversal**: The program efficiently traverses the entire matrix to locate the number.
+- **User Input**: Allows dynamic checking of numbers at runtime.
+- **Readable Output**: Clearly displays the matrix and the results.
 
-## Dependencies
-- **MyLib:** Ensure `MyLib` is implemented and available for handling user input, particularly the `ReadIntNumber` method.
-
-## How to Run
-1. Include the `MyLib` library in your project.
-2. Compile and run the program in any C# IDE (e.g., Visual Studio).
-3. Enter the desired number when prompted to check its existence in the matrix.
-
-## Customization
-- Modify the matrix initialization in `Main` to test different matrices.
-- Extend functionality to read matrix values dynamically from the user or a file.
-
----
-This program is an excellent introduction to matrix operations and modular programming in C#.
-
+## Use Case
+This program can be used as a basic utility for searching elements in a 2D matrix, useful in scenarios like:
+- Data validation.
+- Checking membership in a dataset.
+- Educational purposes to understand 2D array traversal.
