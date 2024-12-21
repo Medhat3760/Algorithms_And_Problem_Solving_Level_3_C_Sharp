@@ -1,4 +1,4 @@
-﻿namespace Problem16_version2
+namespace Problem16_version2
 {
     // Check Sparse Matrix
     internal class Problem16_version2
@@ -26,9 +26,9 @@
         static bool IsSparseMatrix(int[,] matrix)
         {
 
-            float matrixSize = matrix.GetLength(0) * matrix.GetLength(1);
+            float totalElements = matrix.GetLength(0) * matrix.GetLength(1);
 
-            short numberOfZeros = 0;
+            short zeroCount = 0;
 
             for (short i = 0; i < matrix.GetLength(0); i++)
             {
@@ -36,9 +36,16 @@
                 for (short j = 0; j < matrix.GetLength(1); j++)
                 {
 
-                    if (matrix[i, j] == 0) numberOfZeros++;
+                    if (matrix[i, j] == 0)
+                    {
 
-                    if (numberOfZeros >= (matrixSize / 2)) return true;
+                        zeroCount++;
+
+                        if (zeroCount >= (totalElements / 2))
+                            return true;
+
+                    }
+
 
                 }
 
