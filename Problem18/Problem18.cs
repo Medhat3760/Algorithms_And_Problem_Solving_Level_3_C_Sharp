@@ -1,4 +1,4 @@
-﻿namespace Problem18
+namespace Problem18
 {
     // Intersected Numbers In Matrices
     internal class Problem18
@@ -7,13 +7,13 @@
         static void PrintMatrix(int[,] matrix)
         {
 
-            for(short i = 0; i < matrix.GetLength(0); i++)
+            for (short i = 0; i < matrix.GetLength(0); i++)
             {
 
-                for(short j = 0; j < matrix.GetLength(1); j++)
+                for (short j = 0; j < matrix.GetLength(1); j++)
                 {
 
-                    Console.Write($" {matrix[i,j],2}   ");
+                    Console.Write($" {matrix[i, j],2}   ");
 
                 }
 
@@ -26,10 +26,10 @@
         static bool IsNumberExistsInMatrix(int[,] matrix, int number)
         {
 
-            for(short i = 0; i < matrix.GetLength(0); i++)
+            for (short i = 0; i < matrix.GetLength(0); i++)
             {
 
-                for(short j = 0; j < matrix.GetLength(1); j++)
+                for (short j = 0; j < matrix.GetLength(1); j++)
                 {
 
                     if (matrix[i, j] == number)
@@ -61,10 +61,10 @@
                     if (IsNumberExistsInMatrix(matrix2, number))
                     {
 
-                        Console.Write($"{matrix1[i,j],3}  ");
+                        Console.Write($"{matrix1[i, j],3}  ");
 
                     }
-                        
+
 
                 }
 
@@ -77,8 +77,8 @@
         static void Main(string[] args)
         {
 
-            int[,] matrix1 = { { 0, 77, 99 },{1, 10, 22 },{1, 44, 33 } };
-            int[,] matrix2 = { { 30, 1 , 9 },{ 77, 30, 22 },{ 99, 44, 50 } };
+            int[,] matrix1 = { { 0, 77, 99 }, { 1, 10, 22 }, { 1, 44, 33 } };
+            int[,] matrix2 = { { 30, 1, 9 }, { 77, 30, 22 }, { 99, 44, 50 } };
 
             Console.WriteLine("\nMatrix1:");
             PrintMatrix(matrix1);
