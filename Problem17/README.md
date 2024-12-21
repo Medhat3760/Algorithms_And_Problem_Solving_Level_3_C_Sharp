@@ -1,4 +1,4 @@
-# Problem17: Check If Number Exists In Matrix
+# Problem17: Check If a Number Exists In Matrix
 
 This C# program checks if a given number exists in a matrix. The matrix is predefined in the code, and the user is prompted to enter a number to search for. The program then determines if the number is present in the matrix and displays the result.
 
