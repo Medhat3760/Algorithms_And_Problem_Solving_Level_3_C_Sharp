@@ -19,7 +19,7 @@ namespace Problem35
         static void PrintEachWordInString(string s1)
         {
 
-            Console.WriteLine("\nYour string wrords are: ");
+            Console.WriteLine("\nYour string words are: ");
 
             string delim = " "; // Delimiter 
 
