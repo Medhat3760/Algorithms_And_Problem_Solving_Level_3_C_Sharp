@@ -1,4 +1,3 @@
-﻿
 namespace Problem35
 {
     // Print Each Word In String
@@ -22,7 +21,7 @@ namespace Problem35
 
             Console.WriteLine("\nYour string wrords are: ");
 
-            string delim = " ";
+            string delim = " "; // Delimiter 
 
             short pos = 0;
 
