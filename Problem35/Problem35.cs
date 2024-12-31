@@ -43,7 +43,7 @@ namespace Problem35
 
             if (s1 != "")
             {
-                Console.WriteLine(s1);
+                Console.WriteLine(s1); // it print last word of the string.
             }
 
         }
