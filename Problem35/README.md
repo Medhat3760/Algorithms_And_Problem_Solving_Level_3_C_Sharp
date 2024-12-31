@@ -36,18 +36,15 @@ This program takes a string as input, splits it into individual words, and print
 ### Input
 ```
 Please Enter Your String?
-Hello world! Welcome to C# programming.
+Abdelrahman Medhat Rushdy
 ```
 
 ### Output
 ```
 Your string words are: 
-Hello
-world!
-Welcome
-to
-C#
-programming.
+Abdelrahman
+Medhat
+Rushdy
 ```
 
 ## How It Works
