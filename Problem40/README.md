@@ -32,5 +32,3 @@ This program demonstrates how to join strings from different data structures (a 
      - Initializes a sample `List<string>` and `string[]` array.
      - Invokes the appropriate `JoinString` method for each data type.
      - Displays the joined strings.
-
-
