@@ -47,7 +47,3 @@ This program replaces all occurrences of a specific word in a string with anothe
 
 3. **Output**:
    - The program replaces occurrences of the word `"Egypt"` with `"USA"` and displays the updated string.
-## Example
-
-### Predefined Input:
-
