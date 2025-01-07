@@ -74,8 +74,6 @@
         static string ReplaceWordInStringUsingSplit(string text, string wordToReplace, string replaceTo, bool matchCase = true)
         {
 
-            string text2 = "";
-
             List<string> lWords = SplitString(text, " ");
 
             for (short i = 0; i < lWords.Count; i++)
@@ -100,11 +98,9 @@
 
                 }
 
-            }
+            }            
 
-            text2 = JoinString(lWords, " ");
-
-            return text2;
+            return JoinString(lWords, " ");
 
         }
 
