@@ -66,7 +66,7 @@ namespace Problem48
 
         }
 
-        static List<stClient> LoadClientsFromFileToList(string fileName)
+        static List<stClient> LoadClientsDataFromFileToList(string fileName)
         {
 
             List<stClient> lClients = new List<stClient>();
@@ -130,7 +130,7 @@ namespace Problem48
         static void PrintAllClientsData(List<stClient> lClients)
         {
 
-            Console.Write($"\t\t\tClient List ({lClients.Count}) Client(s)");
+            Console.Write($"\t\t\t\tClient List ({lClients.Count}) Client(s)");
 
             PrintClientTableHeader();
 
@@ -149,9 +149,9 @@ namespace Problem48
         static void Main(string[] args)
         {
 
-            List<stClient> clients = LoadClientsFromFileToList("Clients.txt");
+            List<stClient> lClients = LoadClientsDataFromFileToList("Clients.txt");
 
-            PrintAllClientsData(clients);
+            PrintAllClientsData(lClients);
 
         }
     }
