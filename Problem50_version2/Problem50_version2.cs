@@ -1,4 +1,4 @@
-﻿namespace Problem50_version2
+namespace Problem50_version2
 {
     // Delete Client By Account Number
     internal class Problem50_version2
@@ -222,14 +222,14 @@
             if (FindClientByAccountNumber(fileName, accountNumber, ref client))
             {
 
-                char confirmDelete = 'N';
+                char confirm = 'N';
 
                 PrintClient(client);
 
                 Console.Write("\nAre you sur you want delete this client? Y/N ? ");
-                confirmDelete = char.Parse(Console.ReadLine());
+                confirm = char.Parse(Console.ReadLine());
 
-                if (char.ToUpper(confirmDelete) == 'Y')
+                if (char.ToUpper(confirm) == 'Y')
                 {
 
                     MarkClientForDeleteByAccountNumber(accountNumber, ref lClients);
