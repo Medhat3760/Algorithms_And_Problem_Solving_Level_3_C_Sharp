@@ -162,6 +162,8 @@ namespace Problem50_version2
 
                     lClients[i] = c;
 
+                    break;
+
                 }
 
             }
