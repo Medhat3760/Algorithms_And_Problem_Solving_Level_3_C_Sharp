@@ -1,4 +1,4 @@
-﻿using System.Net;
+using System.Net;
 
 namespace Bank1
 {
@@ -150,30 +150,6 @@ namespace Bank1
 
         }
 
-        static stClient ReadNewClient()
-        {
-
-            stClient client = new stClient();
-
-            Console.Write("\nPlease Enter Account Number? ");
-            client.accountNumber = Console.ReadLine().Trim();
-
-            Console.Write("Please Enter Pin Code? ");
-            client.pinCode = Console.ReadLine();
-
-            Console.Write("Please Enter Name? ");
-            client.name = Console.ReadLine();
-
-            Console.Write("Please Enter Phone? ");
-            client.phone = Console.ReadLine();
-
-            Console.Write("Please Enter Client Balance? ");
-            client.accountBalance = double.Parse(Console.ReadLine());
-
-            return client;
-
-        }
-
         static string ConvertRecordToLine(stClient client, string separator = "#//#")
         {
 
@@ -224,7 +200,7 @@ namespace Bank1
 
         }
 
-        static bool ClientExistsByClientNumber(string fileName, string accountNumber)
+        static bool ClientExistsByAccountNumber(string fileName, string accountNumber)
         {
 
             if (File.Exists(fileName))
@@ -263,7 +239,7 @@ namespace Bank1
 
             client.accountNumber = ReadAccountNumber();
 
-            while (ClientExistsByClientNumber(fileName, client.accountNumber))
+            while (ClientExistsByAccountNumber(fileName, client.accountNumber))
             {
 
                 Console.Write($"\nClient with [{client.accountNumber}] already exists, Enter another Account Number ? ");
